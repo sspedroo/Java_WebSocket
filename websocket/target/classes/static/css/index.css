@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url(../fema.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.hidden {
+    display: none;
+}
+
+.lobbyButton{
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 14px;
+    width: 120px;
+    border: none;
+    background-color: rgb(131, 162, 187);
+    transition: all 0.5s ease;
+}
+.lobbyButton:hover{
+    transform: scale(1.1);
+}
+
+.buttonChat{
+    margin-left: 10px;
+    background-color: rgb(236, 233, 199);
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    width: 100px;
+}
+
+#chatContainer {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo semi-transparente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.chatHeader {
+    text-align: center;
+}
+
+#chatMessages {
+    height: 400px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 5px;
+    word-wrap: break-word;
+    scroll-behavior: auto;
+}
+
+.chatInput {
+    display: flex;
+    gap: 5px;
+}
+
+#messageInput {
+    flex: 1;
+    word-wrap: break-word;
+}
+
+
+#popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popupContent {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.popupContent h2 {
+    text-align: center;
+}
+
+/* Estilos para mensagens enviadas pelo usuário */
+.sentMessage {
+    text-align: right;
+    border: 1px solid rgb(13, 238, 88);
+    color: #000000; /* Cor do texto das mensagens enviadas */
+    margin-left: 50%;
+    border-radius: 10px; /* Borda arredondada para as mensagens enviadas */
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para mensagens recebidas de outros usuários */
+.receivedMessage {
+    text-align: left;
+    border: 1px solid black;
+    background-color: #f1f1f1; /* Cor de fundo das mensagens recebidas */
+    color: #000; /* Cor do texto das mensagens recebidas */
+    margin-right: 50%;
+    border-radius: 10px; /* Borda arredondada para as mensagens recebidas */
+    padding: 10px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <script src="./js/sockjs.min.js"></script>
+    <script src="./js/stomp.min.js"></script>
+    <script src="./js/index.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <title>Exemplo WebSocket</title>
+</head>
+<body>
+<div id="chatContainer" class="hidden">
+    <div class="chatHeader">
+        <h2>Chat</h2>
+    </div>
+    <div id="chatMessages"></div>
+    <div class="chatInput">
+        <form onsubmit="sendMessage(event)">
+            <input type="text" id="messageInput" placeholder="Digite sua mensagem">
+            <button type="submit" class="buttonChat animate__animated animate__heartBeat animate__infinite">Enviar</button>
+        </form>
+
+    </div>
+</div>
+
+<div id="popup" class="hidden">
+    <div class="popupContent">
+        <h2>Digite seu nome:</h2>
+        <input type="text" id="usernameInput">
+        <button onclick="openChat()" class="lobbyButton">Entrar no Chat</button>
+    </div>
+</div>
+</body>
+<script>
+    
+</script>
+</html>
